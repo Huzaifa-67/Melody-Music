@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .col {
+      color: rgba(232, 235, 226, 0.945);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(5, 1, 22);
+    }
+
+    .background
+{
+    background-image: url(webbackground.jpg);
+    background-size: cover;
+    background-color: black;
+}
+.weblogo img
+{
+    height: 70px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.right
+{
+    font-size: 22px;
+    color: white;
+}
+nav
+{
+    background-color: #1f0747;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.right a{
+    color: white;
+}
+
+.dropdown{
+background-color: #1f0747;
+}
+
+.dropdown-menu li a
+{
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-menu li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.navbar-nav .nav-link:hover
+{
+    color: blueviolet;
+}
+
+    .ws_images {
+      display: flex;
+      text-align: center;
+    }
+
+    .ws_images img {
+      height: 650px;
+    }
+
+    .card-body p {
+      font-size: 15px;
+    }
+
+    .song a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: #1f0747;
+      width: 30%;
+      color: rgb(233, 221, 201);
+      padding: 1.5rem;
+      margin-left: 450px;
+      text-align: center;
+    }
+
+
+    header h1 {
+      margin: 0;
+    }
+
+    .artist p {
+      font-size: 18px;
+      justify-content: center;
+      color: rgb(233, 221, 201);
+    }
+
+    .artist h2 {
+      font-size: 35px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: rgb(233, 221, 201);
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .artist-cover {
+      width: 300px;
+      height: 360px;
+      background-image: url(./image/aima.jpeg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+
+    .album-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .btn {
+      background-color: #1f0747;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2e2431;
+    }
+
+    .grid-container {
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 25px;
+      justify-items: center;
+      background-color: rgb(5, 1, 22);
+    }
+
+    .grid-container image {
+      margin: 4px;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    .footer
+{
+    background-color: #130924;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-top: solid 3px rgba(159, 157, 155, 0.772);
+    justify-content: space-around;
+}
+.total
+{
+    color: rgb(233, 221, 201);
+    width: 400px;
+    height: 150;
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+.total h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.total span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+}
+.total p
+{
+    font-size: 17px;
+    margin: 25px 0px;
+    letter-spacing: 1.5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.browse
+{
+    width: 350px;
+    height: 150px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.browse h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.browse span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+    }
+.browse ul
+{
+    list-style: none;
+    margin-top: 10px;
+    }
+.browse ul li a
+{
+    text-decoration: none;
+    color: rgb(233, 221, 201);
+    text-transform: uppercase;
+    line-height: 30px;
+    transition: all ease 0.3s;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.browse ul li a:hover
+{
+    font-weight: bold;
+    color: white;
+    background-color: #944ada;
+    padding: 8px;
+    border-radius: 10px;
+}
+.contact
+{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.contact h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.contact span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+}
+.contact p
+{
+    display: flex;
+    align-items: center;
+}
+.contact img
+{
+    height: 40px;
+    width: 38px;
+    margin: 30px 5px;
+    cursor: pointer;
+    padding: 0px 5px;
+    transition: all ease 0.5s;
+}
+.contact img:hover
+{
+    transform: scale(1.2);
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation section Start here -->
+
+  <nav class="navbar navbar-expand-lg bg-body-light">
+    <div class="container-fluid">
+      <section class="weblogo">
+        <a class="navbar-brand" href=""><i><b><img src="image/website_logo_1-removebg-preview.png" alt=""></b></i></a>
+      </section>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="right">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="cetagory.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" style="background-color: #1f0747">
+                <li><a class="dropdown-item" href="cetagory.html">All Category</a></li>
+                  <li><a class="dropdown-item" href="rockmusic.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="popmusic.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="jazzmusic.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+                  <li><a class="dropdown-item" href="electrical.html">Electronic</a></li>
+                  <li><a class="dropdown-item" href="hiphopmusic.html">HipHop</a></li>
+                  <li><a class="dropdown-item" href="countrymusic.html">Country Music</a></li>
+                  <li><a class="dropdown-item" href="rapmusic.html">Rap</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artist
+              </a>
+              <ul class="dropdown-menu" style="background-color: #1f0747">
+                <li><a class="dropdown-item" href="music.html">All Artist</a></li>
+                <li><a class="dropdown-item" href="aslam.html">Atif Aslam</a></li>
+                <li><a class="dropdown-item" href="zafar.html">Ali Zafar</a></li>
+                <li><a class="dropdown-item" href="singh.html">Arijit Singh</a></li>
+                <li><a class="dropdown-item" href="khan.html">Rahat Fateh Ali Khan</a></li>
+                <li><a class="dropdown-item" href="azhar.html">Asim Azhar</a></li>
+                <li><a class="dropdown-item" href="baig.html">Aima Baig</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./event.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Login/SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navigation section end here -->
+
+
+
+  <div class="container">
+    <header>
+      <h1 class="artist-title">AIMA BAIG</h1>
+    </header>
+    <main>
+      <div class="artist-cover"></div>
+      <div class="album-info">
+
+        <div class="artist bio">
+          <h2><i>INTRODUCTION</i></h2>
+          <p>
+            Aima Noor-ul Ain Baig ( born 10 March 1995) is a Pakistani singer. She is known for her appearances on Dunya
+            News' program Mazaaq Raat from 2015 to 2017. She rose to fame from her songs in Lahore Se Aagey (2016),after
+            which she gained popularity through many other soundtracks and her appearance in Coke Studio. She was
+            awarded Tamgha-e-Fakhre-Imtiaz in August 2019.
+            Baig received her Bachelor of Film and Television from School Of Creative Arts, University of Lahore. TV
+            anchor Mubashir Lucman, with whom she has sung a cover of "Summer Wine", is her father's friend, and she has
+            written the script for his next film.
+
+            She announced her engagement to Shahbaz Shigri on 21 March 2021; they had been dating since they met while
+            filming Parey Hut Love.In September 2022, she confirmed on Instagram that the couple had broken up.
+
+            In 2022, she revealed she has 19 tattoos. In 2023, she revealed she is no more able to move her right hand
+            middle finger due to arthritis.
+            In July 2023, Aima Baig released first single "Funkari" from her upcoming debut album, potentially named
+            Chapter 1. The album will consist of songs of different genres, including Hip hop music, ghazal,
+          </p>
+        </div>
+        <button class="btn"></button>
+      </div>
+    </main>
+  </div>
+  <div class="song">
+    <div class="grid-container">
+      <a href="./songs/y2mate.com - Aima Baig  Pyar Hua Tha  Official Video.mp3">
+        <img src="./image/pyar.jpeg" alt="">
+        <p>Aima Baig |Pyar Hua Tha| (official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Long Time Official Music Video Aima Baig  The Breakup Song.mp3">
+        <img src="./image/long.jpeg" alt="">
+        <p>Aima Baig |Long Time| (official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Aima Baig  Funkari Official Video.mp3">
+        <img src="./image/funkari.jpeg" alt="">
+        <p>Aima Baig |Funkari|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Aima Baig x Abdullah Siddiqui  Be Myself  Official Video.mp3">
+        <img src="./image/myself.jpeg" alt="">
+        <p>Aima Baig |Be Myself|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Aima Baig  Tu Mera Na Hua  Bisconni Music Season 2 (1).mp3">
+        <img src="./image/na hua.jpeg" alt="">
+        <p>Aima Baig |Tu Mera Na Hua|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Coke Studio Season 12  Dhola  Sahir Ali Bagga  Aima Baig.mp3">
+        <img src="./image/dholla.jpeg" alt="">
+        <p>Aima Baig |Dhola|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Coke Studio Season 11 Aatish Shuja Haider and Aima Baig.mp3">
+        <img src="./image/aatish.jpeg" alt="">
+        <p>Aima Baig |Aatish|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Aima Baig Heart Breaking Song  Biggest Hit Of 2019  Aey Zindagi  C1 Shorts.mp3">
+        <img src="./image/aye zindagi.jpeg" alt="">
+        <p>Aima Baig |Aye Zindagi|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Coke Studio Season 10 Baazi Sahir Ali Bagga  Aima Baig.mp3">
+        <img src="./image/bazzi.jpeg" alt="">
+        <p>Aima Baig |Bazzi|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - KaifoSuroor  Lyrical Video  Aima Baig ft Sadaf Kanwal.mp3">
+        <img src="./image/kaifo suroor.jpeg" alt="">
+        <p>Aima Baig |Kaif O Suroor|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Saathyia  ABHI  aimabaigsong gohermumtaz jaltheband abhi.mp3">
+        <img src="./image/saathiya.jpeg" alt="">
+        <p>Aima Baig |Saathiya|(official music)</p>
+      </a>
+      <a href="./songs/y2mate.com - Do Bol Original Motion Picture Soundtrack.mp3">
+        <img src="./image/do bol.jpeg" alt="">
+        <p>Aima Baig |Do Bol|(official music)</p>
+      </a>
+    </div>
+  </div>
+  <!-- Footer Section Start Here -->
+
+  <div class="footer">
+    <div class="total">
+      <h1><span>Our</span>Vision</h1>
+      <p>We envision a world where music is accessible to everyone, where artists have the resources they need to
+        succeed, and where fans can effortlessly explore and enjoy the sounds they love.</p>
+    </div>
+    <div class="browse">
+      <h1><span>MELODY MUSIC</span></h1>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="cetagory.html">Category</a></li>
+        <li><a href="music.html">Artist</a></li>
+        <li><a href="login.html">Login/SignUp</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <H1><span>Contact Us</span></H1>
+      <p>
+        <img src="./image/facebook.svg" alt="">
+        <img src="./image/instagram.svg" alt="">
+        <img src="./image/twitter-original.svg" alt="">
+        <img src="./image/google-gmail.svg" alt="">
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Section End Here -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

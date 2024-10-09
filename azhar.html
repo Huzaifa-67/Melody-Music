@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .col {
+      color: rgba(232, 235, 226, 0.945);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(5, 1, 22);
+    }
+
+    .background {
+      background-image: url(webbackground.jpg);
+      background-size: cover;
+      background-color: black;
+    }
+
+    .weblogo img {
+      height: 70px;
+      width: 100px;
+      margin-left: 10px;
+      border-radius: 20px;
+    }
+
+    .right {
+      font-size: 22px;
+      color: white;
+    }
+
+    nav {
+      background-color: #1f0747;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 20px;
+      /* Adjust spacing as needed */
+    }
+
+    .right a {
+      color: white;
+    }
+
+    .dropdown {
+      background-color: #1f0747;
+    }
+
+    .dropdown-menu li a {
+      color: white;
+      font-size: 16px;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: blueviolet;
+    }
+
+
+    .ws_images {
+      display: flex;
+      text-align: center;
+    }
+
+    .ws_images img {
+      height: 650px;
+    }
+
+    .card-body p {
+      font-size: 15px;
+    }
+
+    .song a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .song img {
+      height: 180px;
+      width: 300px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    header {
+      background-color: #1f0747;
+      width: 30%;
+      color: rgb(233, 221, 201);
+      padding: 1.5rem;
+      margin-left: 450px;
+      text-align: center;
+    }
+
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .artist-cover {
+      width: 300px;
+      height: 360px;
+      background-image: url(./image/azhar.jpeg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+
+    .album-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .artist p {
+      font-size: 18px;
+      justify-content: center;
+      color: rgb(233, 221, 201);
+    }
+
+    .artist h2 {
+      font-size: 35px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: rgb(233, 221, 201);
+    }
+
+    .btn {
+      background-color: #1f0747;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2e2431;
+    }
+
+    .grid-container {
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 25px;
+      justify-items: center;
+      background-color: rgb(2, 0, 12);
+    }
+
+    .grid-container image {
+      margin: 4px;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* footer section start here */
+
+    .footer
+{
+    background-color: #130924;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-top: solid 3px rgba(159, 157, 155, 0.772);
+    justify-content: space-around;
+}
+.total
+{
+    color: rgb(233, 221, 201);
+    width: 400px;
+    height: 150;
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+.total h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.total span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+}
+.total p
+{
+    font-size: 17px;
+    margin: 25px 0px;
+    letter-spacing: 1.5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.browse
+{
+    width: 350px;
+    height: 150px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.browse h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.browse span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+    }
+.browse ul
+{
+    list-style: none;
+    margin-top: 10px;
+    }
+.browse ul li a
+{
+    text-decoration: none;
+    color: rgb(233, 221, 201);
+    text-transform: uppercase;
+    line-height: 30px;
+    transition: all ease 0.3s;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.browse ul li a:hover
+{
+    font-weight: bold;
+    color: white;
+    background-color: #944ada;
+    padding: 8px;
+    border-radius: 10px;
+}
+.contact
+{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.contact h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.contact span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+}
+.contact p
+{
+    display: flex;
+    align-items: center;
+}
+.contact img
+{
+    height: 40px;
+    width: 38px;
+    margin: 30px 5px;
+    cursor: pointer;
+    padding: 0px 5px;
+    transition: all ease 0.5s;
+}
+.contact img:hover
+{
+    transform: scale(1.2);
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation section Start here -->
+
+  <nav class="navbar navbar-expand-lg bg-body-light">
+    <div class="container-fluid">
+      <section class="weblogo">
+        <a class="navbar-brand" href=""><i><b><img src="./image/website_logo_1-removebg-preview.png" alt=""></b></i></a>
+      </section>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="right">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./cetagory.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" style="background-color: #1f0747">
+                <li><a class="dropdown-item" href="cetagory.html">All Category</a></li>
+                  <li><a class="dropdown-item" href="rockmusic.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="popmusic.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="jazzmusic.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+                  <li><a class="dropdown-item" href="electrical.html">Electronic</a></li>
+                  <li><a class="dropdown-item" href="hiphopmusic.html">HipHop</a></li>
+                  <li><a class="dropdown-item" href="countrymusic.html">Country Music</a></li>
+                  <li><a class="dropdown-item" href="rapmusic.html">Rap</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artist
+              </a>
+              <ul class="dropdown-menu" style="background-color: #1f0747">
+                <li><a class="dropdown-item" href="music.html">All Artist</a></li>
+                <li><a class="dropdown-item" href="aslam.html">Atif Aslam</a></li>
+                <li><a class="dropdown-item" href="zafar.html">Ali Zafar</a></li>
+                <li><a class="dropdown-item" href="singh.html">Arijit Singh</a></li>
+                <li><a class="dropdown-item" href="khan.html">Rahat Fateh Ali Khan</a></li>
+                <li><a class="dropdown-item" href="azhar.html">Asim Azhar</a></li>
+                <li><a class="dropdown-item" href="baig.html">Aima Baig</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./event.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Login/SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navigation section end here -->
+
+  <div class="container">
+    <header>
+      <h1 class="artist-title">ASIM AZHAR</h1>
+    </header>
+
+    <main>
+      <div class="artist-cover"></div>
+      <div class="album-info">
+        <div class="artist bio">
+          <h2><i>INTRODUCTION</i></h2>
+          <p>
+            Asim Azhar (born 29 October 1996) is a Pakistani singer, songwriter, musician and an actor. He started his
+            career as a singer on YouTube, covering contemporary Western songs before he became a public figure.
+            Asim Azhar was born on 29 October 1996. Born to Azhar Hussain, and actress Gul-e-Rana. He became popular
+            because of his songs recorded in Coke Studio 9. His most recent song is the HBL PSL 5 official anthem
+            "Tayyar Hain" along with Ali Azmat, Arif Lohar and Haroon. In February 2020, He received The Best Stylish
+            Performer award at PSA in Dubai.[citation needed] His song "Jo Tu Na Mila" featuring Iqra Aziz hit 100M
+            views on YouTube making him the fourth Pakistani singer to cross 100M views after Atif Aslam, Rahat Fateh
+            Ali Khan and Momina Mustehsan in May 2020."Tera Woh Pyar", sung by Azhar and Momina Mustehsan has also
+            garnered over 140M views as of July 2020.
+
+            In 2019, Azhar also had an album with an Indian record company and a Bollywood single planned for release.
+            As a result of the cross-border tensions between India and Pakistan, Azhar's plans with his record company,
+            Universal Music India, came to a halt.
+          </p>
+        </div>
+        <button class="btn"></button>
+      </div>
+    </main>
+  </div>
+  <div class="song">
+    <div class="grid-container">
+      <a href="./songs/y2mate.com - Asim Azhar  Habibi Official Video  New Song 2022.mp3">
+        <img src="./image/habibi.jpeg" alt="habibi">
+        <p>Asim Azhar - Habibi (official song) | New Song 2022</p>
+        <a
+          href="./songs/y2mate.com - Humraah Official Music Video  Asim Azhar  Malang  Disha Patani Aditya Roy Kapur.mp3">
+          <img src="./image/humrah.jpeg" alt="humraah">
+          <p>Humraah (Official Music ). Asim Azhar | Malang | </p>
+          <a href="./songs/y2mate.com - Asim Azhar  Jo Tu Na Mila.mp3">
+            <img src="./image/mila.jpeg" alt="jo Tu Na Mila">
+            <p>Asim Azhar - Jo Tu Na Mila</p>
+            <a
+              href="./songs/y2mate.com - Tarasti hai nigahen full video song by Asim azahar feat Mahira Khan  Bilal Ashraf.mp3">
+              <img src="./image/galat.jpeg" alt="Tarasti Hai Nigahen">
+              <p>Galat Fehmi song by Asim azahar |Superstar| </p>
+              <a href="./songs/y2mate.com - Asim Azhar  Dard Official Video Durefishan Saleem  Kunaal Vermaa.mp3">
+                <img src="./image/dard.jpeg" alt="dard">
+                <p>Asim Azhar - Dard (Official Song) Durefishan Saleem |</p>
+                <a href="./songs/y2mate.com - Bematlab Official Video Asim Azhar ft Talha Anjum  BEMATLAB.mp3">
+                  <img src="./image/bematlab.jpeg" alt="Bematlab">
+                  <p>Bematlab Asim Azhar feat. Talha Anjum </p>
+                  <a href="./songs/y2mate.com - Kyun Lyric Video Asim Azhar  BEMATLAB.mp3">
+                    <img src="./image/kyun.jpeg" alt="kyun">
+                    <p>Kyun (Lyric music) Asim Azhar | BEMATLAB |</p>
+                    <a href="./songs/y2mate.com - Asim Azhar  Saiyyan Official Video  Sajal Ali.mp3">
+                      <img src="./image/saiyyan.jpeg" alt="Saiyyan">
+                      <p>Saiyyan Song|Asim Azhar|Saiyyan| </p>
+                      <a href="./songs/y2mate.com - Kabhi Mai Kabhi Tum Music Video  AsimAzharMusicofficial  C011.mp3">
+                        <img src="./image/kabhi yum.jpeg" alt=" Kabhi Mai Kabhi Tum">
+                        <p>Stream Kabhi Mai Kabhi Tum (Official Music)
+                        </p>
+                        <a
+                          href="./songs/y2mate.com - Tere Liye  Asim Azhar Official Video  Qasim Azhar  KalaKar Sessions.mp3">
+                          <img src="./image/tere lye.jpeg" alt=" tere lye">
+                          <p>Tere Liye - Asim Azhar (Official Video) | Qasim Azhar | </p>
+                          <a href="./songs/y2mate.com - Asim Azhar  Chand Mahiya Official Music Video.mp3">
+                            <img src="./image/mahiya.jpeg" alt=" chand mahiya">
+                            <p>Asim Azhar - Chand Mahiya (Official Music )</p>
+                            <a
+                              href="./songs/y2mate.com - Coke Studio Season 11 Mahi Aaja Asim Azhar and Momina Mustehsan.mp3">
+                              <img src="./image/download.jpeg">
+                              <p>Asim Azhar | Mahi Aaja| (Official Music )</p>
+    </div>
+
+    <!-- Footer Section Start Here -->
+
+    <div class="footer">
+      <div class="total">
+        <h1><span>Our</span>Vision</h1>
+        <p>We envision a world where music is accessible to everyone, where artists have the resources they need to
+          succeed, and where fans can effortlessly explore and enjoy the sounds they love.</p>
+      </div>
+      <div class="browse">
+        <h1><span>MELODY MUSIC</span></h1>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="cetagory.html">Category</a></li>
+        <li><a href="music.html">Artist</a></li>
+        <li><a href="login.html">Login/SignUp</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <H1><span>Contact Us</span></H1>
+        <p>
+          <img src="./image/facebook.svg" alt="">
+          <img src="./image/instagram.svg" alt="">
+          <img src="./image/twitter-original.svg" alt="">
+          <img src="./image/google-gmail.svg" alt="">
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer Section End Here -->
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

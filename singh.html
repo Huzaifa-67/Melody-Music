@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .col {
+      color: rgba(232, 235, 226, 0.945);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(5, 1, 22);
+    }
+
+    .background
+{
+    background-image: url(webbackground.jpg);
+    background-size: cover;
+    background-color: black;
+}
+.weblogo img
+{
+    height: 70px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.right
+{
+    font-size: 22px;
+    color: white;
+}
+nav
+{
+    background-color: #1f0747;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.right a{
+    color: white;
+}
+
+.dropdown{
+background-color: #1f0747;
+}
+
+.dropdown-menu li a
+{
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-menu li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.navbar-nav .nav-link:hover
+{
+    color: blueviolet;
+}
+
+    .ws_images {
+      display: flex;
+      text-align: center;
+    }
+
+    .ws_images img {
+      height: 650px;
+    }
+
+    .card-body p {
+      font-size: 15px;
+    }
+
+    .song a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: #1f0747;
+      width: 30%;
+      color: rgb(233, 221, 201);
+      padding: 1.5rem;
+      margin-left: 450px;
+      text-align: center;
+    }
+
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .artist p {
+      font-size: 18px;
+      justify-content: center;
+      color: rgb(233, 221, 201);
+    }
+
+    .artist h2 {
+      font-size: 35px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: rgb(233, 221, 201);
+    }
+
+    .artist-cover {
+      width: 300px;
+      height: 360px;
+      background-image: url(./image/singh.jpeg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+
+    .album-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .btn {
+      background-color: #1f0747;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2e2431;
+    }
+
+    .grid-container {
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 25px;
+      justify-items: center;
+      background-color: rgb(5, 1, 22);
+    }
+
+    .grid-container image {
+      margin: 4px;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    /* footer section start here */
+
+    .footer
+{
+    background-color: #130924;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-top: solid 3px rgba(159, 157, 155, 0.772);
+    justify-content: space-around;
+}
+.total
+{
+    color: rgb(233, 221, 201);
+    width: 400px;
+    height: 150;
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+.total h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.total span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+}
+.total p
+{
+    font-size: 17px;
+    margin: 25px 0px;
+    letter-spacing: 1.5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.browse
+{
+    width: 350px;
+    height: 150px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.browse h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.browse span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+    }
+.browse ul
+{
+    list-style: none;
+    margin-top: 10px;
+    }
+.browse ul li a
+{
+    text-decoration: none;
+    color: rgb(233, 221, 201);
+    text-transform: uppercase;
+    line-height: 30px;
+    transition: all ease 0.3s;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.browse ul li a:hover
+{
+    font-weight: bold;
+    color: white;
+    background-color: #944ada;
+    padding: 8px;
+    border-radius: 10px;
+}
+.contact
+{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.contact h1
+{
+    color: rgb(233, 221, 201);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.contact span
+{
+    padding: 0px 10px;
+    border-left: #F79A33 solid;
+}
+.contact p
+{
+    display: flex;
+    align-items: center;
+}
+.contact img
+{
+    height: 40px;
+    width: 38px;
+    margin: 30px 5px;
+    cursor: pointer;
+    padding: 0px 5px;
+    transition: all ease 0.5s;
+}
+.contact img:hover
+{
+    transform: scale(1.2);
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation section Start here -->
+
+  <nav class="navbar navbar-expand-lg bg-body-light">
+    <div class="container-fluid">
+      <section class="weblogo">
+        <a class="navbar-brand" href=""><i><b><img src="./image/website_logo_1-removebg-preview.png" alt=""></b></i></a>
+      </section>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="right">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./cetagory.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" style="background-color: #1f0747">
+                <li><a class="dropdown-item" href="cetagory.html">All Category</a></li>
+                  <li><a class="dropdown-item" href="rockmusic.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="popmusic.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="jazzmusic.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+                  <li><a class="dropdown-item" href="electrical.html">Electronic</a></li>
+                  <li><a class="dropdown-item" href="hiphopmusic.html">HipHop</a></li>
+                  <li><a class="dropdown-item" href="countrymusic.html">Country Music</a></li>
+                  <li><a class="dropdown-item" href="rapmusic.html">Rap</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artist
+              </a>
+              <ul class="dropdown-menu" style="background-color: #1f0747">
+                <li><a class="dropdown-item" href="music.html">All Artist</a></li>
+                <li><a class="dropdown-item" href="aslam.html">Atif Aslam</a></li>
+                <li><a class="dropdown-item" href="zafar.html">Ali Zafar</a></li>
+                <li><a class="dropdown-item" href="singh.html">Arijit Singh</a></li>
+                <li><a class="dropdown-item" href="khan.html">Rahat Fateh Ali Khan</a></li>
+                <li><a class="dropdown-item" href="azhar.html">Asim Azhar</a></li>
+                <li><a class="dropdown-item" href="baig.html">Aima Baig</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./event.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Login/SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navigation section end here -->
+
+
+  <div class="container">
+    <header>
+      <h1 class="artist-title">ARIJIT SINGH</h1>
+    </header>
+
+    <main>
+      <div class="artist-cover"></div>
+      <div class="album-info">
+        <div class="artist bio">
+          <h2><i>INTRODUCTION</i></h2>
+          <p>
+            Arijit Singh (born 25 April 1987) is an Indian playback singer and music composer. The recipient of several
+            accolades including a National Film Award and seven Filmfare Awards, he has recorded songs in several Indian
+            languages, predominantly Hindi and Bengali. He is noted for his ability of performing songs in diverse music
+            genres and is acclaimed for his significant contributions to the contemporary Bollywood Music. Singh is also
+            considered as one of the best singers of his generation.
+
+            Singh began his career when he participated in the contemporary reality show Fame Gurukul in 2005. Singh
+            made his Hindi cinema debut in 2011 with the song "Phir Mohabbat" along with Saim Bhatt and Mohammed Irfan
+            composed by Mithoon for the film Murder 2, although the song was recorded in 2009.
+
+            He received recognition with the release of successful tracks "Tum Hi Ho" and "Chahun Main Ya Naa" from
+            Aashiqui 2 in 2013. He was declared the most-streamed Indian artist of 2020, 2021, 2022 and 2023 by Spotify.
+            He is the third most followed artist globally and the most followed Asian on Spotify.
+          </p>
+        </div>
+        <button class="btn"></button>
+      </div>
+    </main>
+  </div>
+  <div class="song">
+    <div class="grid-container">
+      <a
+        href="./songs/y2mate.com - Hai Dil Ye Mera Full Video Song  Arijit Singh  Hate Story 2  Jay Bhanushali Surveen Chawla.mp3">
+        <img src="./image/hia dil.jpeg">
+        <p>Arijit Singh|Hai Dil Ye Mera|(official music)</p>
+        <a
+          href="./songs/y2mate.com - Hawayein Lyric Video  Jab Harry Met Sejal Shah Rukh Khan AnushkaArijit SinghPritam.mp3">
+          <img src="./image/hawayein.jpeg">
+          <p>Arijit Singh| Hawayein| (official music)</p>
+          <a
+            href="./songs/y2mate.com - Tum Hi Ho Aashiqui 2 Full Song With Lyrics  Aditya Roy Kapur Shraddha Kapoor.mp3">
+            <img src="./image/tum hi ho.jpeg">
+            <p>Arijit Singh|Tum Hi Ho | (official music)</p>
+            <a
+              href="./songs/y2mate.com - ANIMAL SATRANGASong Ranbir KapoorRashmikaSandeep VArijitShreyas PSiddharthGarima Bhushan K.mp3">
+              <img src="./image/satranga.jpeg">
+              <p>Arijit Singh|Satranga | (official music)</p>
+              <a
+                href="./songs/y2mate.com - Oonchi Oonchi Deewarein Full Video MeezaanAnaswara Arijit Singh Manan RadhikaVinayBhushan K.mp3">
+                <img src="./image/dewaren.jpeg">
+                <p>Arijit Singh|Oonchi Oonchi Dewarain | (official music)</p>
+                <a
+                  href="./songs/y2mate.com - Sooryavanshi Mere Yaaraa Song  Akshay Kumar Katrina Kaif Rohit Shetty Arijit S Neeti  JAM8 KAG.mp3">
+                  <img src="./image/mere yara.jpeg">
+                  <p>Arijit Singh|Mere Yaara | (official music)</p>
+                  <a
+                    href="./songs/y2mate.com - Phir Bhi Tumko Chaahunga  Full Song  Arijit Singh  Arjun K  Shraddha K  Mithoon Manoj M.mp3">
+                    <img src="./image/chahunga.jpeg">
+                    <p>Arijit Singh| Phir Bhi Tum Ko Chaahunga| (official music)</p>
+                    <a href="./songs/y2mate.com - Humdard Full Video Song  Ek Villain  Arijit Singh  Mithoon.mp3">
+                      <img src="./image/hamdard.jpeg">
+                      <p>Arijit Singh|Humdard | (official music)</p>
+                      <a
+                        href="./songs/y2mate.com - Saanson Ko Full Video  ZiD  Mannara Karanvir  Arijit Singh  Sharib Toshi.mp3">
+                        <img src="./image/sanso.jpeg">
+                        <p>Arijit Singh|Saanson Ko | (official music)</p>
+                        <a
+                          href="./songs/y2mate.com - LO MAAN LIYA Full Video Song  Raaz Reboot  Arijit SinghEmraan HashmiKriti KharbandaGaurav Arora.mp3">
+                          <img src="./image/maan lya.jpeg" alt="">
+                          <p>Arijit Singh|Lo Maan Liya | (official music)</p>
+                          <a
+                            href="./songs/y2mate.com - Jaan Nisaar  Lyrical  Kedarnath Arijit Singh  Sushant Singh Rajput  Sara Ali Khan Amit Trivedi.mp3">
+                            <img src="./image/nisar.jpeg" alt="">
+                            <p>Arijit Singh|Jan Nisar | (official music)</p>
+                            <a
+                              href="./songs/y2mate.com - Tainu Khabar Nahi  Arijit Singh  Munjya  Sharvari Abhay Verma SachinJigarAmitabh Bhattacharya.mp3">
+                              <img src="./image/khabar.jpeg" alt="">
+                              <p>Arijit Singh|Tainu Khabar Nahi | (official music)</p>
+    </div>
+    <!-- Footer Section Start Here -->
+
+    <div class="footer">
+      <div class="total">
+        <h1><span>Our</span>Vision</h1>
+        <p>We envision a world where music is accessible to everyone, where artists have the resources they need to
+          succeed, and where fans can effortlessly explore and enjoy the sounds they love.</p>
+      </div>
+      <div class="browse">
+        <h1><span>MELODY MUSIC</span></h1>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="cetagory.html">Category</a></li>
+        <li><a href="music.html">Artist</a></li>
+        <li><a href="login.html">Login/SignUp</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <H1><span>Contact Us</span></H1>
+        <p>
+          <img src="./image/facebook.svg" alt="">
+          <img src="./image/instagram.svg" alt="">
+          <img src="./image/twitter-original.svg" alt="">
+          <img src="./image/google-gmail.svg" alt="">
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer Section End Here -->
+
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

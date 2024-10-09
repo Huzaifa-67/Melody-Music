@@ -1,0 +1,289 @@
+.col{
+  color: rgb(73, 36, 71);
+}
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(64, 42, 68);
+}
+.background
+{
+    background-image: url(webbackground.jpg);
+    background-size: cover;
+    background-color: black;
+}
+.weblogo img
+{
+    height: 70px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.right
+{
+    font-size: 22px;
+    color: white;
+}
+nav
+{
+    background-color: #1f0747;
+}
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.right a{
+    color: white;
+}
+
+.dropdown{
+background-color: #1f0747;
+}
+
+.dropdown-menu li a
+{
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-menu li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.navbar-nav .nav-link:hover
+{
+    color: blueviolet;
+}.ws_images
+{
+  display: flex;
+  text-align: center;
+}
+.ws_images img
+{
+  height: 650px;
+}
+.card-body p 
+{
+  font-size: 15px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-top: 10px;
+  background-color: #948291;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.music-cover {
+  width: 300px;
+  height: 300px;
+  background-image: url(webbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.music-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.music-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.music-artist {
+  font-size: 1.2rem;
+  color: #080006;
+}
+
+.album-release-date {
+  font-size: 1rem;
+  color: #0f000f;
+}
+
+.music-description {
+  flex: 1;
+  margin-top: 1rem;
+  color: rgb(167, 161, 166);
+}
+
+.image img
+{
+  height: 230px;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .music-cover {
+      width: 100%;
+  }
+
+  .music-info {
+      flex: 100%;
+  }
+}
+.im{
+  width: 100px;
+  height: 100px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: 25px; */
+  justify-items: center;
+  background-color: rgb(5, 1, 22);
+}
+
+.grid-container img {
+  margin-top: 20px;
+  width: 300px;
+  height: 150px; /* adjust the height to your liking */
+  object-fit: cover;
+  border-radius: 10px;
+}
+.song a
+{
+text-decoration: none;
+color: white;
+}
+
+/* footer section start here */
+
+.footer
+{
+  background-color: #130924;
+  display: flex;
+  width: 100%;
+  height: 225px;
+  margin-top: 10px;
+  border-top: solid 3px rgba(159, 157, 155, 0.772);
+  justify-content: space-around;
+}
+.total
+{
+  color: rgb(233, 221, 201);
+  width: 400px;
+  height: 150;
+  align-items: center;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+.total h1
+{
+  color: rgb(233, 221, 201);
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.total span
+{
+  padding: 0px 10px;
+  border-left: #F79A33 solid;
+}
+.total p
+{
+  font-size: 17px;
+  margin: 25px 0px;
+  letter-spacing: 1.5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.browse
+{
+  width: 350px;
+  height: 150px;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+.browse h1
+{
+  color: rgb(233, 221, 201);
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.browse span
+{
+  padding: 0px 10px;
+  border-left: #F79A33 solid;
+  }
+.browse ul
+{
+  list-style: none;
+  margin-top: 10px;
+  }
+.browse ul li a
+{
+  text-decoration: none;
+  color: rgb(233, 221, 201);
+  text-transform: uppercase;
+  line-height: 30px;
+  transition: all ease 0.3s;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.browse ul li a:hover
+{
+  font-weight: bold;
+  color: white;
+  background-color: #F79A33;
+  padding: 8px;
+  border-radius: 10px;
+}
+.contact
+{
+  width: 300px;
+  height: 150px;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+.contact h1
+{
+  color: rgb(233, 221, 201);
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.contact span
+{
+  padding: 0px 10px;
+  border-left: #F79A33 solid;
+}
+.contact p
+{
+  display: flex;
+  align-items: center;
+}
+.contact img
+{
+  height: 40px;
+  width: 38px;
+  margin: 30px 5px;
+  cursor: pointer;
+  padding: 0px 5px;
+  transition: all ease 0.5s;
+}
+.contact img:hover
+{
+  transform: scale(1.2);
+}

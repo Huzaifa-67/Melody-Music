@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body background="/image/webbackground.jpg">
+       
+    <!-- Navigation section Start here -->
+
+    <nav class="navbar navbar-expand-lg bg-body-light">
+        <div class="container-fluid">
+          <section class="weblogo">
+            <a class="navbar-brand" href=""><i><b><img src="./image/website_logo_1-removebg-preview.png" alt=""></b></i></a>
+          </section>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="right">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./About.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./cetagory.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" style="background-color: #1f0747">
+                  <li><a class="dropdown-item" href="cetagory.html">All Category</a></li>
+                  <li><a class="dropdown-item" href="rockmusic.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="popmusic.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="jazzmusic.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+                  <li><a class="dropdown-item" href="electrical.html">Electronic</a></li>
+                  <li><a class="dropdown-item" href="hiphopmusic.html">HipHop</a></li>
+                  <li><a class="dropdown-item" href="countrymusic.html">Country Music</a></li>
+                  <li><a class="dropdown-item" href="rapmusic.html">Rap</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Artist
+                </a>
+                <ul class="dropdown-menu" style="background-color: #1f0747">
+                  <li><a class="dropdown-item" href="music.html">All Artist</a></li>
+                  <li><a class="dropdown-item" href="aslam.html">Atif Aslam</a></li>
+                  <li><a class="dropdown-item" href="zafar.html">Ali Zafar</a></li>
+                  <li><a class="dropdown-item" href="singh.html">Arijit Singh</a></li>
+                  <li><a class="dropdown-item" href="khan.html">Rahat Fateh Ali Khan</a></li>
+                  <li><a class="dropdown-item" href="azhar.html">Asim Azhar</a></li>
+                  <li><a class="dropdown-item" href="baig.html">Aima Baig</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./event.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login/SignUp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+
+  <!-- Navigation section end here --> 
+
+
+
+  <div class="login-wrap">
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <form id="signInForm">
+                    <div class="group">
+                        <label for="signInUser" class="label">Username</label>
+                        <input id="signInUser" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="signInPass" class="label">Password</label>
+                        <input id="signInPass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Login">
+                    </div>
+                </form>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <a href="#forgot">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="sign-up-htm">
+                <form id="signUpForm">
+                    <div class="group">
+                        <label for="signUpUser" class="label">Username</label>
+                        <input id="signUpUser" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="signUpPass" class="label">Password</label>
+                        <input id="signUpPass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="signUpconfirmPass" class="label">Confirm Password</label>
+                        <input id="signUpconfirmPass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="signUpEmail" class="label">Email Address</label>
+                        <input id="signUpEmail" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign Up">
+                    </div>
+                </form>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <label for="tab-1">Already Member?</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section Start Here -->
+   
+<div class="footer">
+    <div class="total">
+      <h1><span>Our</span>Vision</h1>
+      <p>We envision a world where music is accessible to everyone, where artists have the resources they need to succeed, and where fans can effortlessly explore and enjoy the sounds they love.</p>
+    </div>
+    <div class="browse">
+      <h1><span>MELODY MUSIC</span></h1>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="cetagory.html">Category</a></li>
+        <li><a href="music.html">Artist</a></li>
+        <li><a href="login.html">Login/SignUp</a></li>
+      </ul>
+    </div>
+      <div class="contact">
+        <H1><span>Contact Us</span></H1>
+        <p>
+          <img src="./image/facebook.svg" alt="">
+        <img src="./image/instagram.svg" alt="">
+        <img src="./image/twitter-original.svg" alt="">
+        <img src="./image/google-gmail.svg" alt="">
+        </p>
+      </div>
+    </div>
+  
+    <!-- Footer Section End Here -->
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+</html>
